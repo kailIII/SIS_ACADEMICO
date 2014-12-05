@@ -11,75 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140928203901) do
+ActiveRecord::Schema.define(version: 20141007195715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: true do |t|
-    t.string   "title"
-    t.text     "text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "cajas", force: true do |t|
-    t.string   "nombre"
-    t.string   "simbolo"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "clientes", force: true do |t|
-    t.string   "nombre"
-    t.string   "apellido"
-    t.string   "direccion"
+  create_table "alumnos", force: true do |t|
+    t.string   "ci"
+    t.string   "nombres"
+    t.string   "apellidos"
+    t.date     "fecha_nacimiento"
+    t.string   "lugar_nacimiento"
+    t.text     "direccion"
     t.string   "telefono"
     t.string   "celular"
-    t.decimal  "credito"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "comments", force: true do |t|
-    t.string   "commenter"
-    t.text     "body"
-    t.integer  "article_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "comments", ["article_id"], name: "index_comments_on_article_id", using: :btree
-
-  create_table "posts", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "productos", force: true do |t|
-    t.string   "nombre"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "proveedors", force: true do |t|
-    t.text     "nombre"
-    t.string   "ruc"
-    t.decimal  "saldo"
-    t.date     "fecha_registro"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "usuarios", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "vendedors", force: true do |t|
-    t.string   "nombre"
-    t.text     "login"
-    t.text     "clave"
+    t.string   "email"
+    t.integer  "estado_civil"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
