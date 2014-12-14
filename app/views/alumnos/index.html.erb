@@ -1,0 +1,49 @@
+<h1>Listing alumnos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ci alu</th>
+      <th>Nombres alu</th>
+      <th>Apellidos alu</th>
+      <th>Fnac alu</th>
+      <th>Lnac alu</th>
+      <th>Direccion alu</th>
+      <th>Telefono alu</th>
+      <th>Celular alu</th>
+      <th>Email alu</th>
+      <th>Est civil alu</th>
+      <th>Genero alu</th>
+      <th>Nacionalidad alu</th>
+      <th>Procedencia alu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alumnos.each do |alumno| %>
+      <tr>
+        <td><%= alumno.ci_alu %></td>
+        <td><%= alumno.nombres_alu %></td>
+        <td><%= alumno.apellidos_alu %></td>
+        <td><%= alumno.fnac_alu %></td>
+        <td><%= alumno.lnac_alu %></td>
+        <td><%= alumno.direccion_alu %></td>
+        <td><%= alumno.telefono_alu %></td>
+        <td><%= alumno.celular_alu %></td>
+        <td><%= alumno.email_alu %></td>
+        <td><%= alumno.est_civil_alu %></td>
+        <td><%= alumno.genero_alu %></td>
+        <td><%= alumno.nacionalidad_alu %></td>
+        <td><%= alumno.procedencia_alu %></td>
+        <td><%= link_to 'Show', alumno %></td>
+        <td><%= link_to 'Edit', edit_alumno_path(alumno) %></td>
+        <td><%= link_to 'Destroy', alumno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Alumno', new_alumno_path %>

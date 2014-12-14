@@ -1,0 +1,33 @@
+<h1>Listing materia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cod mat</th>
+      <th>Nombre mat</th>
+      <th>Alias mat</th>
+      <th>Hs mat</th>
+      <th>Contenido mat</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @materia.each do |materium| %>
+      <tr>
+        <td><%= materium.cod_mat %></td>
+        <td><%= materium.nombre_mat %></td>
+        <td><%= materium.alias_mat %></td>
+        <td><%= materium.hs_mat %></td>
+        <td><%= materium.contenido_mat %></td>
+        <td><%= link_to 'Show', materium %></td>
+        <td><%= link_to 'Edit', edit_materium_path(materium) %></td>
+        <td><%= link_to 'Destroy', materium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Materium', new_materium_path %>

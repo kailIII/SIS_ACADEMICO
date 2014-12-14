@@ -1,0 +1,49 @@
+<h1>Listing docentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ci doc</th>
+      <th>Nombre doc</th>
+      <th>Apellido doc</th>
+      <th>Fnac doc</th>
+      <th>Lnac doc</th>
+      <th>Direccion doc</th>
+      <th>Telefono doc</th>
+      <th>Celular doc</th>
+      <th>Email doc</th>
+      <th>Est civil doc</th>
+      <th>Genero doc</th>
+      <th>Nacionalidad doc</th>
+      <th>Especialidad doc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @docentes.each do |docente| %>
+      <tr>
+        <td><%= docente.ci_doc %></td>
+        <td><%= docente.nombre_doc %></td>
+        <td><%= docente.apellido_doc %></td>
+        <td><%= docente.fnac_doc %></td>
+        <td><%= docente.lnac_doc %></td>
+        <td><%= docente.direccion_doc %></td>
+        <td><%= docente.telefono_doc %></td>
+        <td><%= docente.celular_doc %></td>
+        <td><%= docente.email_doc %></td>
+        <td><%= docente.est_civil_doc %></td>
+        <td><%= docente.genero_doc %></td>
+        <td><%= docente.nacionalidad_doc %></td>
+        <td><%= docente.especialidad_doc %></td>
+        <td><%= link_to 'Show', docente %></td>
+        <td><%= link_to 'Edit', edit_docente_path(docente) %></td>
+        <td><%= link_to 'Destroy', docente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Docente', new_docente_path %>

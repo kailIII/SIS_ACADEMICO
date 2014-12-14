@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nro nota:</strong>
+  <%= @notum.nro_nota %>
+</p>
+
+<p>
+  <strong>Letra nota:</strong>
+  <%= @notum.letra_nota %>
+</p>
+
+<%= link_to 'Edit', edit_notum_path(@notum) %> |
+<%= link_to 'Back', nota_path %>

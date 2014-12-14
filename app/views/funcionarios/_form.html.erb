@@ -1,0 +1,69 @@
+<%= form_for(@funcionario) do |f| %>
+  <% if @funcionario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@funcionario.errors.count, "error") %> prohibited this funcionario from being saved:</h2>
+
+      <ul>
+      <% @funcionario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ci_fun %><br>
+    <%= f.text_field :ci_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :nombres_fun %><br>
+    <%= f.text_field :nombres_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :apellidos_fun %><br>
+    <%= f.text_field :apellidos_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :fnac_fun %><br>
+    <%= f.datetime_select :fnac_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :lnac_fun %><br>
+    <%= f.text_field :lnac_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_fun %><br>
+    <%= f.text_area :direccion_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_fun %><br>
+    <%= f.text_field :telefono_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_fun %><br>
+    <%= f.text_field :celular_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :email_fun %><br>
+    <%= f.text_field :email_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :est_civil_fun %><br>
+    <%= f.text_field :est_civil_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :genero_fun %><br>
+    <%= f.text_field :genero_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :nacionalidad_fun %><br>
+    <%= f.text_field :nacionalidad_fun %>
+  </div>
+  <div class="field">
+    <%= f.label :especialidad_fun %><br>
+    <%= f.text_field :especialidad_fun %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

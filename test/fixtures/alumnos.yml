@@ -1,25 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  ci: MyString
-  nombres: MyString
-  apellidos: MyString
-  fechaNacimiento: 2014-10-07
-  lugarNacimiento: MyString
-  direccion: MyText
-  telefono: MyString
-  celular: MyString
-  email: MyString
-  estadoCivil: 
+  ci_alu: MyString
+  nombres_alu: MyString
+  apellidos_alu: MyString
+  fnac_alu: 2014-12-14 13:48:59
+  lnac_alu: MyString
+  direccion_alu: MyString
+  telefono_alu: MyString
+  celular_alu: MyString
+  email_alu: MyString
+  est_civil_alu: MyString
+  genero_alu: MyString
+  nacionalidad_alu: MyString
+  procedencia_alu: MyString
 
 two:
-  ci: MyString
-  nombres: MyString
-  apellidos: MyString
-  fechaNacimiento: 2014-10-07
-  lugarNacimiento: MyString
-  direccion: MyText
-  telefono: MyString
-  celular: MyString
-  email: MyString
-  estadoCivil: 
+  ci_alu: MyString
+  nombres_alu: MyString
+  apellidos_alu: MyString
+  fnac_alu: 2014-12-14 13:48:59
+  lnac_alu: MyString
+  direccion_alu: MyString
+  telefono_alu: MyString
+  celular_alu: MyString
+  email_alu: MyString
+  est_civil_alu: MyString
+  genero_alu: MyString
+  nacionalidad_alu: MyString
+  procedencia_alu: MyString

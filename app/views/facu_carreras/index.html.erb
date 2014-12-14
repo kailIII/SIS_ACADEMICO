@@ -1,0 +1,27 @@
+<h1>Listing facu_carreras</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Carrera</th>
+      <th>Facultad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facu_carreras.each do |facu_carrera| %>
+      <tr>
+        <td><%= facu_carrera.carrera %></td>
+        <td><%= facu_carrera.facultad %></td>
+        <td><%= link_to 'Show', facu_carrera %></td>
+        <td><%= link_to 'Edit', edit_facu_carrera_path(facu_carrera) %></td>
+        <td><%= link_to 'Destroy', facu_carrera, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Facu carrera', new_facu_carrera_path %>

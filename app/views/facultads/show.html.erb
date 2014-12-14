@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre facu:</strong>
+  <%= @facultad.nombre_facu %>
+</p>
+
+<p>
+  <strong>Direccion facu:</strong>
+  <%= @facultad.direccion_facu %>
+</p>
+
+<p>
+  <strong>Telefono facu:</strong>
+  <%= @facultad.telefono_facu %>
+</p>
+
+<p>
+  <strong>Email facu:</strong>
+  <%= @facultad.email_facu %>
+</p>
+
+<%= link_to 'Edit', edit_facultad_path(@facultad) %> |
+<%= link_to 'Back', facultads_path %>

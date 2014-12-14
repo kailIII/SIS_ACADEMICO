@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_mat: MyString
+  nombre_mat: MyString
+  alias_mat: MyString
+  hs_mat: 1
+  contenido_mat: MyText
+
+two:
+  cod_mat: MyString
+  nombre_mat: MyString
+  alias_mat: MyString
+  hs_mat: 1
+  contenido_mat: MyText

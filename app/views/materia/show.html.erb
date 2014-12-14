@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod mat:</strong>
+  <%= @materium.cod_mat %>
+</p>
+
+<p>
+  <strong>Nombre mat:</strong>
+  <%= @materium.nombre_mat %>
+</p>
+
+<p>
+  <strong>Alias mat:</strong>
+  <%= @materium.alias_mat %>
+</p>
+
+<p>
+  <strong>Hs mat:</strong>
+  <%= @materium.hs_mat %>
+</p>
+
+<p>
+  <strong>Contenido mat:</strong>
+  <%= @materium.contenido_mat %>
+</p>
+
+<%= link_to 'Edit', edit_materium_path(@materium) %> |
+<%= link_to 'Back', materia_path %>

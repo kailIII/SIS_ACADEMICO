@@ -1,8 +1,33 @@
 Rails.application.routes.draw do
 
-  resources :products
 
-  #get 'welcome/index'
+  resources :sedes
+
+  resources :facu_carreras
+
+  resources :cargos
+
+  resources :universidads
+
+  resources :anho_lectivos
+
+  resources :materia
+
+  resources :nota
+
+  resources :semestres
+
+  resources :funcionarios
+
+  resources :facultads
+
+  resources :docentes
+
+  resources :ciudads
+
+  resources :carreras
+
+  resources :alumnos
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

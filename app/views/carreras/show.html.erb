@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre carr:</strong>
+  <%= @carrera.nombre_carr %>
+</p>
+
+<p>
+  <strong>Duracion carr:</strong>
+  <%= @carrera.duracion_carr %>
+</p>
+
+<p>
+  <strong>Titulo obt carr:</strong>
+  <%= @carrera.titulo_obt_carr %>
+</p>
+
+<%= link_to 'Edit', edit_carrera_path(@carrera) %> |
+<%= link_to 'Back', carreras_path %>

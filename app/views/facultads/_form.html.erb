@@ -1,0 +1,33 @@
+<%= form_for(@facultad) do |f| %>
+  <% if @facultad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@facultad.errors.count, "error") %> prohibited this facultad from being saved:</h2>
+
+      <ul>
+      <% @facultad.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_facu %><br>
+    <%= f.text_field :nombre_facu %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_facu %><br>
+    <%= f.text_area :direccion_facu %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_facu %><br>
+    <%= f.text_field :telefono_facu %>
+  </div>
+  <div class="field">
+    <%= f.label :email_facu %><br>
+    <%= f.text_field :email_facu %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

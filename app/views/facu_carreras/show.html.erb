@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Carrera:</strong>
+  <%= @facu_carrera.carrera %>
+</p>
+
+<p>
+  <strong>Facultad:</strong>
+  <%= @facu_carrera.facultad %>
+</p>
+
+<%= link_to 'Edit', edit_facu_carrera_path(@facu_carrera) %> |
+<%= link_to 'Back', facu_carreras_path %>

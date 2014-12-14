@@ -1,0 +1,49 @@
+<h1>Listing funcionarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ci fun</th>
+      <th>Nombres fun</th>
+      <th>Apellidos fun</th>
+      <th>Fnac fun</th>
+      <th>Lnac fun</th>
+      <th>Direccion fun</th>
+      <th>Telefono fun</th>
+      <th>Celular fun</th>
+      <th>Email fun</th>
+      <th>Est civil fun</th>
+      <th>Genero fun</th>
+      <th>Nacionalidad fun</th>
+      <th>Especialidad fun</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @funcionarios.each do |funcionario| %>
+      <tr>
+        <td><%= funcionario.ci_fun %></td>
+        <td><%= funcionario.nombres_fun %></td>
+        <td><%= funcionario.apellidos_fun %></td>
+        <td><%= funcionario.fnac_fun %></td>
+        <td><%= funcionario.lnac_fun %></td>
+        <td><%= funcionario.direccion_fun %></td>
+        <td><%= funcionario.telefono_fun %></td>
+        <td><%= funcionario.celular_fun %></td>
+        <td><%= funcionario.email_fun %></td>
+        <td><%= funcionario.est_civil_fun %></td>
+        <td><%= funcionario.genero_fun %></td>
+        <td><%= funcionario.nacionalidad_fun %></td>
+        <td><%= funcionario.especialidad_fun %></td>
+        <td><%= link_to 'Show', funcionario %></td>
+        <td><%= link_to 'Edit', edit_funcionario_path(funcionario) %></td>
+        <td><%= link_to 'Destroy', funcionario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Funcionario', new_funcionario_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ciudad_id: 
+  facu_carrera_id: 
+  universidad_id: 
+
+two:
+  ciudad_id: 
+  facu_carrera_id: 
+  universidad_id: 

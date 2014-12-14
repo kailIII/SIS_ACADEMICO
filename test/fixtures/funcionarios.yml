@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ci_fun: MyString
+  nombres_fun: MyString
+  apellidos_fun: MyString
+  fnac_fun: 2014-12-14 14:32:41
+  lnac_fun: MyString
+  direccion_fun: MyText
+  telefono_fun: MyString
+  celular_fun: MyString
+  email_fun: MyString
+  est_civil_fun: MyString
+  genero_fun: MyString
+  nacionalidad_fun: MyString
+  especialidad_fun: MyString
+
+two:
+  ci_fun: MyString
+  nombres_fun: MyString
+  apellidos_fun: MyString
+  fnac_fun: 2014-12-14 14:32:41
+  lnac_fun: MyString
+  direccion_fun: MyText
+  telefono_fun: MyString
+  celular_fun: MyString
+  email_fun: MyString
+  est_civil_fun: MyString
+  genero_fun: MyString
+  nacionalidad_fun: MyString
+  especialidad_fun: MyString

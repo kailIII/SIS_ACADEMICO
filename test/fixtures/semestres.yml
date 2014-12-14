@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descripcion_sem: MyString
+  nro_sem: 1
+
+two:
+  descripcion_sem: MyString
+  nro_sem: 1

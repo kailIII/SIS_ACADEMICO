@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_carr: MyString
+  duracion_carr: 1
+  titulo_obt_carr: MyString
+
+two:
+  nombre_carr: MyString
+  duracion_carr: 1
+  titulo_obt_carr: MyString

@@ -1,0 +1,69 @@
+<%= form_for(@alumno) do |f| %>
+  <% if @alumno.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alumno.errors.count, "error") %> prohibited this alumno from being saved:</h2>
+
+      <ul>
+      <% @alumno.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ci_alu %><br>
+    <%= f.text_field :ci_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :nombres_alu %><br>
+    <%= f.text_field :nombres_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :apellidos_alu %><br>
+    <%= f.text_field :apellidos_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :fnac_alu %><br>
+    <%= f.datetime_select :fnac_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :lnac_alu %><br>
+    <%= f.text_field :lnac_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_alu %><br>
+    <%= f.text_field :direccion_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_alu %><br>
+    <%= f.text_field :telefono_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :celular_alu %><br>
+    <%= f.text_field :celular_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :email_alu %><br>
+    <%= f.text_field :email_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :est_civil_alu %><br>
+    <%= f.text_field :est_civil_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :genero_alu %><br>
+    <%= f.text_field :genero_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :nacionalidad_alu %><br>
+    <%= f.text_field :nacionalidad_alu %>
+  </div>
+  <div class="field">
+    <%= f.label :procedencia_alu %><br>
+    <%= f.text_field :procedencia_alu %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
